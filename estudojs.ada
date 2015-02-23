@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>In HTML, JavaScript statements are "commands" to the browser.</p>
+<div id="box">
+<p id="demo"> Acho que eu não vou aparecer </p>
+</div>
+
+
+
+<script>
+var id = "box";
+var content = "<h2>Estou em box.</h2>" ;
+var conten2 = "<h1 id="demo">Estou dentro de demo.</h1>";
+var id2 = "demo";
+
+document.getElementById(id).innerHTML= content;
+/*document.getElementById(id2).innerHTML = conten2;
+*/
+</script>
+
+</body>
+</html>

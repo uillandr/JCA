@@ -60,18 +60,17 @@
                         <input name="assunto" type="text" class="text" value="Assunto" >
                         <textarea name="msg" value="Mensagem">Digite sua mensagem aqui...</textarea>
                         -->
-						<p id="msg"></p>
-						<div id="alerta"></div>
-						<input id="nome" name="nome" maxlength ="30" type="text" class="text" value="Seu nome" onfocus="ex_alerta('info','alerta','Digite seu nome.');ch_nfocus(this.id,'Seu nome');" onblur="oc_alerta('alerta');ch_nblur(this.id,'Seu nome');">
+						<div id="alert_nome"><div class="alert alert-info" role="alert">Digite seu nome.</a></div></div>
+						<input name="nome" maxlength ="30" type="text" class="text" value="Seu nome"  onfocus="if (this.value == 'Seu nome') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Seu nome';}" required>
 						
 						<div id="alert_email">   </div>
-						<input id="email" name="email" maxlength ="50" type="text" class="email" value="Seu email" onfocus="ex_alerta('info','alerta','Digite seu email.');ch_nfocus(this.id,'Seu email');" onblur="oc_alerta('alerta');ch_nblur(this.id,'Seu email');" >
+						<input name="email" maxlength ="50" type="text" class="email" value="Seu email" onfocus="if (this.value == 'Seu email') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Seu email';}" required>
 						
 						<div id="alert_assunto">  </div>
-\						<input id="assunto" name="assunto" maxlength ="50" type="text" class="text" value="Assunto" onfocus="ex_alerta('info','alerta','Preencha o assunto da mensagem.');ch_nfocus(this.id,'Assunto')" onblur="oc_alerta(this.id,'alerta');ch_nblur(this.id,'Assunto');" >
+						<input name="assunto" maxlength ="50" type="text" class="text" value="Assunto" onfocus="if (this.value == 'Assunto') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Assunto';}" required>
 						
 						<div id="alert_msg">  </div>
-						<textarea id="msg" name="msg"  maxlength ="3000" onfocus="ex_alerta('info','alerta','Digite sua mensagem para nós.');ch_nfocus(this.id,'Digite sua mensagem aqui')" onblur="oc_alerta(this.id,'alerta');ch_nblur(this.id,'Digite sua mensagem aqui')" >Digite sua mensagem aqui</textarea>
+						<textarea name="msg"  maxlength ="3000" onfocus="if (this.value == 'Digite sua mensagem aqui') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Digite sua mensagem aqui';}" required>Digite sua mensagem aqui</textarea>
                         
 						<div class="clearfix"> </div>
                         <button class="btn" type="submit" >Enviar</button>
