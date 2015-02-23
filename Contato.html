@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<!-- saved from url=(0036)http://jcarecife.com.br/contato.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>JCA Recife Serviços LTDA</title>
+    <!-- Bootstrap -->
+    <link href="./files/bootstrap.css" rel="stylesheet" type="text/css">
+    <!-- Font Awesome  -->
+    <link href="http://jcarecife.com.br/css/font-awesome.min.css" rel="stylesheet">
+    <!-- Web Font  -->
+    <link href="./files/css" rel="stylesheet" type="text/css">
+    <!-- Custom CSS -->
+    <link href="./files/style.css" rel="stylesheet" type="text/css" media="all">
+    <!-- JQuery Script -->
+	<script src="./files/jquery.min.js"></script>
+	<!-- Uillan Script -->
+	<script src="./files/u_lib.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+                <a class="navbar-brand" href="http://jcarecife.com.br/index.html"> JCA Recife</a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="http://jcarecife.com.br/index.html">Home</a></li>
+                    <li><a href="http://jcarecife.com.br/sobre.html">Sobre</a></li>
+                    <li><a href="http://jcarecife.com.br/servicos.html">Serviços</a></li>
+                    <li class="active"><a href="./files/JCA Recife Serviços LTDA.html">Contato</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="section_header">
+        <div class="container">
+            <h2><span>Contato</span></h2>
+        </div>
+    </div>
+    <div class="contact">
+        <div class="container">
+            <div class="col-md-6">
+                <h3>Informações de Contato</h3>
+                <p><span>Endereço:</span><strong> R. da Aurora, 325, Boa Vista, Recife,PE</strong></p>
+                <p><span>E-mail:</span><strong> comercial@jcarecife.com.br</strong></p>
+                <p><span>E-mail:</span><strong> financeiro@jcarecife.com.br</strong></p>
+                <p><span>Telefone Administrativo:</span><strong> (81) 8237-0760</strong></p>
+                <p><span>Telefone Comercial:</span><strong> (81) 8910-3390</strong></p>
+                <p><span>Telefone Financeiro:</span> <strong> (81) 8228-6336</strong></p>
+            </div>
+            <div class="col-md-6">
+                <h3>Nos envie uma mensagem:</h3>
+                <form action="enviar.php" name="form-contato" method="post">
+                    <div class="form_details">
+                        <!--
+						<input name="nome" type="text" class="text" value="Seu nome" >
+                        <input name="email" type="text" class="text" value="Seu e-mail" >
+                        <input name="assunto" type="text" class="text" value="Assunto" >
+                        <textarea name="msg" value="Mensagem">Digite sua mensagem aqui...</textarea>
+                        -->
+						<p id="msg"></p>
+						<div id="alert_nome"></div>
+						<input name="nome" maxlength ="30" type="text" class="text" value="Seu nome"  onclick="msg();" onfocus="if (this.value == 'Seu nome') {this.value = '';};" onblur="if (this.value == '') {this.value = 'Seu nome';}">
+						
+						<div id="alert_email">   </div>
+						<input name="email" maxlength ="50" type="text" class="email" value="Seu email" onfocus="if (this.value == 'Seu email') {this.value = '';};" onblur="if (this.value == '') {this.value = 'Seu email';}" >
+						
+						<div id="alert_assunto">  </div>
+						<input name="assunto" maxlength ="50" type="text" class="text" value="Assunto" onfocus="if (this.value == 'Assunto') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Assunto';}" >
+						
+						<div id="alert_msg">  </div>
+						<textarea name="msg"  maxlength ="3000" onfocus="if (this.value == 'Digite sua mensagem aqui') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Digite sua mensagem aqui';}" >Digite sua mensagem aqui</textarea>
+                        
+						<div class="clearfix"> </div>
+                        <button class="btn" type="submit" >Enviar</button>
+						<!-- <button class="btn" type="submit" onclick="myFunction()">Enviar</button> -->
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <div id="footerwrap">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8"> <span class="copyright">Copyright © 2015 JCA Recife. Todos os direitos reservados!</span> </div>
+                <div class="col-md-4">
+                    <ul class="list-inline social-buttons">
+                        <li><a href="http://jcarecife.com.br/contato.html#"><i class="fa fa-twitter"></i></a> </li>
+                        <li><a href="https://www.facebook.com/jcaservicos1"><i class="fa fa-facebook"></i></a> </li>
+                        <li><a href="http://jcarecife.com.br/contato.html#"><i class="fa fa-google-plus"></i></a> </li>
+                        <li><a href="http://jcarecife.com.br/contato.html#"><i class="fa fa-linkedin"></i></a> </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+	
+	<script>
+function myFunction() {
+    alert("Formulário indisponível no momento! Favor utilize o e-mail: comercial@jcarecife.com.br ou entre em contato conosco através de nossos telefones.");
+}
+	</script>
+
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="./files/bootstrap.min.js"></script>
+
+</body></html>
