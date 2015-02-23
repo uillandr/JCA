@@ -30,14 +30,14 @@ $hora_envio = date('H:i:s');
 	</style>
 	
 	<div id="msg-bd">
-	<p> '+$nome+' enviou uma mensagem </p>
-	<p> Assunto: '+$assunto+' </p>
+	<p> '.$nome.' enviou uma mensagem </p>
+	<p> Assunto: '.$assunto.' </p>
 	<p>
 		Ele diz: <br/>
-		<p>'+$msg+'</p>
+		<p>'.$msg.'</p>
 	</p>
 	<h2> Responda para '.$email.' </h2>
-	<p> Este e-mail foi enviado em <b>'+$data_envio+'</b> &agrave;s <b>'+$hora_envio+'</b></p>
+	<p> Este e-mail foi enviado em <b>'.$data_envio.'</b> &agrave;s <b>'.$hora_envio.'</b></p>
 	<div>
 </html>';
 
