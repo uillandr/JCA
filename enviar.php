@@ -46,7 +46,7 @@ $hora_envio = date('H:i:s');
 //enviar
 	
 	// emails para quem será enviado o formulário
-	$destino = 'uillandr@gmail.com';
+	$destino = 'deyvson.info@gmail.com';
 	$assuntoEmail = $nome+' entrou em contato pelo site.';
 
 	// É necessário indicar que o formato do e-mail é html
