@@ -62,13 +62,13 @@
                         -->
 						<p id="msg"></p>
 						<div id="alerta" data-scroll></div>
-						<input id="nome" name="nome" maxlength ="30" type="text" class="text" value="Seu nome" onfocus="ex_alerta('info','alerta','Digite seu nome.');ch_nfocus(this.id,'Seu nome');" onblur="oc_alerta('alerta');ch_nblur(this.id,'Seu nome');">
+						<input id="nome" name="nome" maxlength ="30" type="text" class="text" placeholder ="Seu nome" onfocus="ex_alerta('info','alerta','Digite seu nome.');" onblur="oc_alerta('alerta');" required>
 						
-						<input id="email" name="email" maxlength ="50" type="text" class="email" value="Seu email" onfocus="ex_alerta('info','alerta','Digite seu email.');ch_nfocus(this.id,'Seu email');" onblur="oc_alerta('alerta');ch_nblur(this.id,'Seu email');" >
+						<input id="email" name="email" maxlength ="50" type="text" class="email" placeholder ="Seu email" onfocus="ex_alerta('info','alerta','Digite seu email.');" onblur="oc_alerta('alerta');" required>
 		
-						<input id="assunto" name="assunto" maxlength ="50" type="text" class="text" value="Assunto" onfocus="ex_alerta('info','alerta','Preencha o assunto da mensagem.');ch_nfocus(this.id,'Assunto');" onblur="oc_alerta('alerta');ch_nblur(this.id,'Assunto');" >
+						<input id="assunto" name="assunto" maxlength ="50" type="text" class="text" placeholder ="Assunto" onfocus="ex_alerta('info','alerta','Preencha o assunto da mensagem.');" onblur="oc_alerta('alerta');" required>
 						
-						<textarea id="msg" name="msg"  maxlength ="3000" onfocus="ex_alerta('info','alerta','Digite sua mensagem para nós.');ch_nfocus(this.id,'Mensagem');" onblur="oc_alerta('alerta');ch_nblur(this.id,'Mensagem');">Mensagem</textarea>
+						<textarea id="msg" name="msg" placeholder="Sua mensagem" maxlength ="3000" onfocus="ex_alerta('info','alerta','Digite sua mensagem para nós.');" onblur="oc_alerta('alerta');" required></textarea>
                         
 						<div class="clearfix"> </div>
                         <button class="btn" type="submit" >Enviar</button>
