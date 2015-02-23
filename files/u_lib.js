@@ -13,6 +13,11 @@ function ch_nblur(id, mensagem){
 	if (tag.value == ''){tag.value = mensagem;};	
 }
 
+function ex_valor(id){
+	var tag = document.getElementById(id);
+	alert(tag.value + "\n" + typeof(tagvalue));
+}
+
 /*
 	Função ch_nfocus(id,mensagem) (CHECAR ONFOCUS)
 	@param id		:	id da div
@@ -26,6 +31,7 @@ function ch_nblur(id, mensagem){
 function ch_nfocus(id,mensagem){
 	var tag = document.getElementById(id);
 	if (tag.value == mensagem){tag.value = '';};
+	alert(tag.value);
 }
 /*
 	Função oc_alerta(id)
